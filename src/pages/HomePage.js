@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef} from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow } from 'swiper/modules';
@@ -25,6 +26,17 @@ const HomePage = () => {
   const section3Images = Array.from({ length: 12 }, (_, i) => `/images/random${i + 1}.jpg`);
 
   const scrollRef = useRef(null);
+  const navigate = useNavigate();
+
+  const handleExploreClick = () => {
+    navigate('/collections');
+    window.scrollTo(0, 0);
+  };
+
+  const handleContactClick = () => {
+    navigate('/contact');
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -369,8 +381,8 @@ const HomePage = () => {
             </p>
 
             <div className="home-section8-cta">
-              <button className="cta-button">Explore Our Collections</button>
-              <button className="cta-button">Get in Touch</button>
+              <button className="cta-button" onClick={handleExploreClick}>Explore Our Collections</button>
+      <button className="cta-button" onClick={handleContactClick}>Get in Touch</button>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaYoutube, FaFacebookF, FaLinkedin, FaChevronDown } from "react-icons/fa";  // Import FaChevronDown here
+import { useNavigate, Link } from "react-router-dom";
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaYoutube, FaFacebookF, FaLinkedin, FaChevronDown } from "react-icons/fa"; 
 import "./Footer.css";
 
 const Footer = () => {
@@ -8,18 +8,12 @@ const Footer = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-  const handleLinkClick = (path, scrollToId = null) => {
+  const handleLinkClick = (path) => {
     setLoading(true);
     setTimeout(() => {
       navigate(path);
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0); 
       setLoading(false);
-      if (scrollToId) {
-        setTimeout(() => {
-          const section = document.getElementById(scrollToId);
-          if (section) section.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
     }, 200);
   };
 
@@ -45,9 +39,9 @@ const Footer = () => {
             </span>
           </div>
           <ul className="ganesh1-sub-list">
-            <li>Marble Slabs</li>
-            <li>Granite Slabs</li>
-            <li>Stone Tiles</li>
+            <li><Link to="/collections#marble-slabs" onClick={() => handleLinkClick('/collections#marble-slabs')}>Marble Slabs</Link></li>
+            <li><Link to="/collections#granite-slabs" onClick={() => handleLinkClick('/collections#granite-slabs')}>Granite Slabs</Link></li>
+            <li><Link to="/collections#stone-tiles" onClick={() => handleLinkClick('/collections#stone-tiles')}>Stone Tiles</Link></li>
           </ul>
         </div>
 
@@ -59,9 +53,11 @@ const Footer = () => {
             </span>
           </div>
           <ul className="ganesh1-sub-list">
-            <li>FAQ</li>
-            <li>Privacy Policy</li>
-            <li>Contact Us</li>
+            <li>
+              <Link to="/contact" onClick={() => handleLinkClick('/contact')} style={{ color: 'white', textDecoration: 'none' }}>
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
 

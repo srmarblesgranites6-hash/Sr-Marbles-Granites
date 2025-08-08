@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Collections.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -18,6 +18,15 @@ const Collections = () => {
     
   const slides = Array.from({ length: 11 }, (_, i) => `/images/slide${i + 1}.jpg`);
   const section3Images = Array.from({ length: 12 }, (_, i) => `/images/random${i + 1}.jpg`);
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
     const collections = [
         {
             brand: "Makrana Marbles",

@@ -79,6 +79,7 @@
   position: relative;
   padding-left: 16px;
   color: var(--text-muted);
+  text-decoration: none;
 }
 
 .ganesh1-sub-list li::before {
@@ -167,6 +168,18 @@
 .ganesh1-mobile-only {
   display: none !important;
 }
+
+
+.ganesh1-sub-list a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.ganesh1-sub-list a:hover {
+  color: white; 
+  text-decoration: none;
+}
+
 
 @media screen and (max-width: 450px) {
   .ganesh1-footer-section {
