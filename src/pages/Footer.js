@@ -73,7 +73,7 @@ const Footer = () => {
             </span>
           </div>
           <div className="ganesh1-contact-details">
-            <p><FaPhoneAlt /> +91 9898989898</p>
+            <p><FaPhoneAlt /> +91 9704048939</p>
             <p><FaEnvelope /> srmarblesgranites6@gmail.com</p>
           </div>
           <div className="ganesh1-footer-social">

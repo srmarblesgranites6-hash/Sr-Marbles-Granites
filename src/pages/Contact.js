@@ -20,7 +20,7 @@ const Contact = () => {
 
             <div className="contact-section1-info">
               <h3>Contact Information:</h3>
-              <p><strong>Phone:</strong> +91 9898989898</p>
+              <p><strong>Phone:</strong> +91 9704048939</p>
               <p><strong>Email:</strong> srmarblesgranites6@gmail.com</p>
               <p><strong>Address:</strong> SR Marbles & Granites, Your City, India</p>
             </div>
