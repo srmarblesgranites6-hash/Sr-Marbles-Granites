@@ -22,7 +22,7 @@ const Contact = () => {
               <h3>Contact Information:</h3>
               <p><strong>Phone:</strong> +91 9704048939</p>
               <p><strong>Email:</strong> srmarblesgranites6@gmail.com</p>
-              <p><strong>Address:</strong> SR Marbles & Granites, Your City, India</p>
+              <p><strong>Address:</strong> Dr.no 7-3-17 a/2 , saraswati Mahal backside, gonti veedhi, Srikakulam, Andhra Pradesh 532001</p>
             </div>
           </div>
 

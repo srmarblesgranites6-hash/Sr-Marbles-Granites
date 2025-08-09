@@ -3,27 +3,33 @@
   --secondary: #0aa8a7;
   --text-light: white;
   --text-muted: #aaaaaa;
+  --bg: black;
+}
+
+.ganesh1-homepage-footer {
+  background: var(--bg);
+  width: 100%;
+}
+
+.ganesh1-footer-container {
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .ganesh1-footer-section {
-  border-top: 1px solid tomato;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
+  border-top: 1px solid var(--primary);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  padding: 60px 80px;
-  background-color: black;
+  padding: 60px 60px;
   color: var(--primary);
+  align-items: start;
 }
 
 .ganesh1-footer-left-final {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
-  max-height: 380px;
-  max-width: 300px;
   color: var(--text-light);
 }
 
@@ -52,7 +58,6 @@
 }
 
 .ganesh1-footer-list-item {
-  cursor: pointer;
   color: var(--text-light);
 }
 
@@ -63,13 +68,14 @@
   font-size: 20px;
   font-weight: bold;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 12px;
   color: var(--text-light);
 }
 
 .ganesh1-sub-list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .ganesh1-sub-list li {
@@ -90,16 +96,32 @@
   font-weight: bold;
 }
 
+.ganesh1-sub-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.ganesh1-sub-list a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.ganesh1-contact-col {
+  word-break: break-word;
+}
+
 .ganesh1-contact-details p {
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   text-align: left;
   color: var(--text-muted);
+  line-height: 1.5;
 }
 
 .ganesh1-contact-details p svg {
   margin-right: 10px;
   color: var(--primary);
+  flex-shrink: 0;
 }
 
 .ganesh1-footer-social {
@@ -136,7 +158,7 @@
 }
 
 .ganesh1-social-icons a:hover {
-  color: var(--bg-1);
+  color: var(--bg);
   background: var(--primary);
   transform: scale(1.2);
 }
@@ -169,104 +191,61 @@
   display: none !important;
 }
 
-
-.ganesh1-sub-list a {
-  color: white; 
-  text-decoration: none; 
-}
-
-.ganesh1-sub-list a:hover {
-  color: white; 
-  text-decoration: none;
-}
-
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1024px) {
   .ganesh1-footer-section {
-    flex-direction: column;
-    margin-left: 0;
-    gap: 25px;
-    padding: 30px 15px;
-    background-color: black;
-    color: var(--primary);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 48px 20px;
   }
+}
 
-  .ganesh1-footer-left-final {
-    text-align: left;
-    width: 100%;
-    color: var(--text-light);
+@media screen and (max-width: 700px) {
+  .ganesh1-footer-section {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 36px 16px;
   }
-
-  .ganesh1-footer-image-final {
-    width: 120px;
-    margin-top: 15px;
-    border-radius: 8px;
-    margin-left: -5px;
-  }
-
-  .ganesh1-footer-list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    border-bottom: 1px solid var(--primary);
-    padding-bottom: 8px;
-    color: var(--text-light);
-  }
-
   .ganesh1-toggle-icon {
-    font-size: 24px;
-    margin-left: 0;
+    display: inline-flex !important;
   }
-
+  .ganesh1-mobile-only {
+    display: inline-flex !important;
+  }
   .ganesh1-footer-list-item.ganesh1-mobile-accordion .ganesh1-sub-list,
   .ganesh1-footer-list-item.ganesh1-mobile-accordion .ganesh1-contact-details {
     display: none;
   }
-
   .ganesh1-footer-list-item.ganesh1-mobile-accordion.open .ganesh1-sub-list,
   .ganesh1-footer-list-item.ganesh1-mobile-accordion.open .ganesh1-contact-details {
     display: block;
     margin-top: 10px;
   }
-
-  .ganesh1-footer-social {
-    margin-top: 15px;
-    text-align: left;
-    margin-bottom: 10px;
-    color: var(--text-light);
+  .ganesh1-footer-list-header {
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 8px;
   }
-
   .ganesh1-social-icons a {
     width: 36px;
     height: 36px;
     border-radius: 50%;
     border: 2px solid var(--primary);
     font-size: 16px;
-    color: var(--primary);
   }
-
   .ganesh1-extra-final {
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
     margin-top: 15px;
   }
-
   .ganesh1-footer-image2-final {
     width: 80px;
     height: auto;
     border-radius: 8px;
   }
-
   .ganesh1-footer-image3-final {
     width: 80px;
     height: 60px;
     border-radius: 8px;
-  }
-
-  .ganesh1-footer-bubbles {
-    display: none;
   }
 }

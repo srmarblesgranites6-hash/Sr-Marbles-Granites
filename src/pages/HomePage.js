@@ -303,42 +303,41 @@ const HomePage = () => {
 
 
       <section className="home-section4-final">
-        <h2 className="home-section4-title-final">Our Premium Collections</h2>
-        <div className="home-section4-underline-final">
-          <div className="line-final large-final"></div>
-          <div className="line-final medium-final"></div>
-          <div className="line-final small-final"></div>
-        </div>
-        <div className="home-section4-grid-final">
-          <div className="home-section4-card-final">
-            <div className="home-section4-text-final">
-              <h3>Makrana <br />Marbles</h3>
-            </div>
-            <img src="/images/card1.jpg" alt="Makrana Marbles" />
-          </div>
-          <div className="home-section4-card-final">
-            <div className="home-section4-text-final">
-              <h3>China <br /> Varieties</h3>
-            </div>
-            <img src="/images/card2.jpg" alt="China Varieties" />
-          </div>
-          <div className="home-section4-card-final">
-            <div className="home-section4-text-final">
-              <h3>Italian <br />Varities</h3>
-            </div>
-            <img src="/images/card3.jpg" alt="Italian varieties" />
-          </div>
-          <div className="home-section4-card-final">
-            <div className="home-section4-text-final">
-              <h3>Rajasthan <br />Varieties</h3>
-            </div>
-            <img src="/images/card4.jpg" alt="Rajasthan Varieties" />
-          </div>
-        </div>
-      </section>
-
-
-
+  <h2 className="home-section4-title-final">
+    <span className="wave-text">Our Premium Collections</span>
+  </h2>
+  <div className="home-section4-underline-final">
+    <div className="line-final large-final"></div>
+    <div className="line-final medium-final"></div>
+    <div className="line-final small-final"></div>
+  </div>
+  <div className="home-section4-grid-final">
+    <div className="home-section4-card-final">
+      <div className="home-section4-text-final">
+        <h3 className="wave-text">Makrana <br />Marbles</h3>
+      </div>
+      <img src="/images/card1.jpg" alt="Makrana Marbles" />
+    </div>
+    <div className="home-section4-card-final">
+      <div className="home-section4-text-final">
+        <h3 className="wave-text">China <br /> Varieties</h3>
+      </div>
+      <img src="/images/card2.jpg" alt="China Varieties" />
+    </div>
+    <div className="home-section4-card-final">
+      <div className="home-section4-text-final">
+        <h3 className="wave-text">Italian <br />Varities</h3>
+      </div>
+      <img src="/images/card3.jpg" alt="Italian varieties" />
+    </div>
+    <div className="home-section4-card-final">
+      <div className="home-section4-text-final">
+        <h3 className="wave-text">Rajasthan <br />Varieties</h3>
+      </div>
+      <img src="/images/card4.jpg" alt="Rajasthan Varieties" />
+    </div>
+  </div>
+</section>
 
 
 
