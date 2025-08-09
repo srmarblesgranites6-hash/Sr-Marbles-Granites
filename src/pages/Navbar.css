@@ -33,32 +33,54 @@
   display: flex;
   align-items: center;
   flex: 0 0 auto;
-  animation: wave 3s infinite;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 .logo-text {
   font-size: 18px;
   font-weight: bold;
   color: tomato;
+}
+
+.logo-moving-text {
+  margin-left: 2px;
   display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: moveText 8s linear infinite;
+}
+
+.logo-moving-text span {
+  color: tomato !important;
+}
+
+.marble,
+.and,
+.granites {
+  display: inline-block;
+  padding: 0 2px;
+  color: tomato !important;
+}
+
+@keyframes moveText {
+  0% {
+    width: 0;
+  }
+  5% {
+    width: 100%;
+  }
+  30% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  80% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
 }
 
 .nav-links {

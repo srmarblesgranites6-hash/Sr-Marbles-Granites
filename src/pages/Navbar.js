@@ -45,7 +45,12 @@ function Navbar() {
     <nav className={`navbar ${showNavbar ? 'visible' : 'hidden'}`} ref={navRef}>
       <div className="navbar-container">
         <div className="logo-container">
-          <span className="logo-text">SR Marbles & Granites</span>
+          <span className="logo-text">SR </span>
+          <span className="logo-moving-text">
+            <span className="marbles"> Marbles </span>
+            <span className="and">&</span>
+            <span className="granites">Granites</span>
+          </span>
         </div>
 
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>

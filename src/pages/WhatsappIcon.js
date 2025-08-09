@@ -4,7 +4,7 @@ import './WhatsappIcon.css';
 
 const WhatsappIcon = () => {
   const handleClick = () => {
-    window.open('https://wa.me/917075531402', '_blank');
+    window.open('https://wa.me/919704048939', '_blank');
   };
 
   return (
